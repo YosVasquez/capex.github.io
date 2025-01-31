@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transmisión en Vivo </title>
+  <link rel="stylesheet" href="lives.css">
+</head>
+<body>
+  <h1>Transmisión en Vivo</h1>
+
+  <!-- Contenedor de Video y Comentarios -->
+  <div class="video-container">
+    <video id="liveVideo" autoplay playsinline></video>
+    <div class="comments-container" id="commentsContainer"></div>
+  </div>
+
+  <!-- Botón para grabar y enlace de descarga -->
+  <div class="controls">
+    <button id="recordButton">Grabar Transmisión</button>
+    <a id="downloadLink" style="display: none;" download="liveStream.webm">Descargar Video</a>
+  </div>
+
+  <!-- Campo de Entrada para Comentarios -->
+  <div class="comment-input-container">
+    <input type="text" id="commentInput" placeholder="Escribe un comentario...">
+    <button id="sendCommentButton">Enviar</button>
+  </div>
+
+  <script src="lives.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
